@@ -58,20 +58,15 @@ img.portrait {
     margin-right: auto;
 }
 
-h2.portrait {
+h2.portrait, h3.portrait{
     font-size: 200%;
     background-color: #fcf3e1;
     width: 60%;
+    height: auto;
     text-align: center;
     margin: 10px auto; 
 }
-h3.portrait {
-    font-size: 200%;
-    background-color: #fcf3e1;
-    width: 60%;
-    text-align: center;
-    margin: 10px auto; 
-}
+
 h3.likes {
     font-size: 2em;
     background-color: bisque;
@@ -258,8 +253,137 @@ ul.travel {
   }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+    /* UPDATING HOMEPAGE LAYOUT */
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+    }
+    .pets_home{
+        grid-column: 1;
+        grid-row: 1;
+    } 
+    .pets_desc{
+        grid-column: 1;
+        grid-row: 2;
+    } 
+    .recipes_home{
+        grid-column: 2;
+        grid-row: 1;
+    } 
+    .recipes_desc{
+        grid-column: 2;
+        grid-row: 2;
+    } 
+    .travel_home{
+        grid-column: 3;
+        grid-row: 1;
+    } 
+    .travel_desc{
+        grid-column: 3;
+        grid-row: 2;
+    } 
 
+    .portrait-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+        align-items: center;
+    }
+    .picture{
+        grid-column: 1; 
+    }
+    .name{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .bio{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .gallery{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .likes{
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    img.portrait {
+        border: 10px solid rgb(237, 225, 208);
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1.portrait{
+        text-align: center;
+    }
+
+    h2.portrait, h3.portrait {
+        font-size: 150%;
+        background-color: #fcf3e1;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 1px auto; 
+    }
+
+    h3.portrait{
+        align-self: start;
+    }
+
+    h3.likes {
+        font-size: 150%;
+        background-color: #fcf3e1;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin: 1px auto;
+        align-self: start;
+    }
+    
+    ul.likes {
+        text-align: center;
+    }
+    
+    .pets-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
+    }
+    
+    .pets-grid > img {
+        border: 10px solid rgb(237, 225, 208);
+        width: 80%; 
+        height: auto; 
+        padding: 1em;
+        align-items: center;
+    }
+    
+    
+    .item1 .item2{
+        grid-column: span 1; 
+        grid-row: span 1;
+    }
+    
+    .item3 {
+        grid-column: span 2; 
+        grid-row: span 1;
+    }
 }
 
 @media (prefers-reduced-motion) {
