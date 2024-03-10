@@ -1,5 +1,4 @@
-@media only screen and (max-width: 680px) {
-    body {
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: floralwhite;
     line-height: 1.5;
@@ -257,7 +256,9 @@ ul.travel {
     height: 1px;
     overflow: hidden;
   }
-}
+
+
+@media only screen and (min-width: 600px) { }
 
 @media (prefers-reduced-motion) {
     .animation {
