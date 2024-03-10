@@ -10,12 +10,27 @@
 <body>
     <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
-        <nav class="drop">
-            <ul class="navbar">
-                <li class="navbar drop_info"><a href = "index.html"  class="active">Home</a></li>
-                <li class="navbar drop_info"><a href = "pets.html">Pets</a></li>
-                <li class="navbar drop_info"><a href = "recipes.html">Recipes</a></li>
-                <li class="navbar drop_info"><a href = "travel.html">Travel</a></li>
+        <nav>
+            <ul class="navbar drop">
+                <li class="navbar"><a href = "index.html"  class="active">Home</a></li>
+                <li class="navbar drop"><a href="pets.html">Pets</a>
+                    <ul class="drop_info">
+                        <li><a class="drop_info" href="pets.html">Cats</a></li>
+                        <li><a href="pets.html">Dogs</a></li>
+                    </ul>
+                </li>
+                <li class="navbar drop"><a href = "recipes.html">Recipes</a>
+                    <ul class="drop_info">
+                    <li><a href="recipes.html">Cats</a></li>
+                    <li><a href="recipes.html">Dogs</a></li>
+                    </ul>
+                </li>
+                <li class="navbar drop"><a href = "travel.html">Travel</a>
+                    <ul class="drop_info">
+                    <li><a href="travel.html">Cats</a></li>
+                    <li><a href="travel.html">Dogs</a></li>
+                    </ul>
+                </li>
             </ul>
         <h1 class="homepage">Pets, Recipes, Travel</h1>
         </nav>
