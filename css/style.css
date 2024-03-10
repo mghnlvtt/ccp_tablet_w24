@@ -259,32 +259,7 @@ ul.travel {
 
 
 @media only screen and (min-width: 600px) {
-    /* ADDING DROPDOWN MENUS WITHIN NAVIGATION BAR */
-    .navbar .drop{
-        position: relative;
-        display:inline-block;
-    }
-    .navbar .drop_info{
-        display: none;
-        position: absolute;
-        background-color: #c6c6c6;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    .navbar .drop_info a{
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .navbar .drop_info a:hover{background-color: #fcf3e1;}
-    .navbar .drop:hover .drop_info{
-        display: block;
-    }
-    .navbar .drop:hover ul.navbar a{background-color: #b05c5c;}
 
-    
 }
 
 @media (prefers-reduced-motion) {
