@@ -432,38 +432,22 @@ ul.travel {
         grid-column: span 2; 
         grid-row: span 1;
     }
-<<<<<<< Updated upstream
-    
-}
-=======
-
-    .photos-container {
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        justify-content: space-around; 
+    .travel_pics{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 40px;
+        row-gap: 10px;
+        padding: 0.9em;
+        justify-items: center; 
         align-items: center;
     }
-
-    .photo-item {
-        width: 48%; 
-        margin: 1%; 
-        box-sizing: border-box;
+    .travelimages{
+        grid-column: 1;
+    }
+    .captions{
+        grid-column:2;
     }
 
-    .photo-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
-        padding: 5px;
-    }
-
-    .photo-item p {
-        text-align: center;
-        margin: 10px 0;
-    }
-
->>>>>>> Stashed changes
 
 @media (prefers-reduced-motion) {
     .animation {
