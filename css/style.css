@@ -441,11 +441,21 @@ ul.travel {
         justify-items: center; 
         align-items: center;
     }
+    .travel_pics > img {
+        background-color:#959fb0;
+        width: 100%; 
+        height: auto; 
+        padding: em;
+        align-items: center;
+        margin-left: 20%;
+    }
+    
     .travelimages{
         grid-column: 1;
     }
     .captions{
         grid-column:2;
+        margin-left:20%;
     }
 
 
