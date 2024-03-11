@@ -432,8 +432,40 @@ ul.travel {
         grid-column: span 2; 
         grid-row: span 1;
     }
-    
-}
+
+    .photos-container {
+        display: flex;
+        flex-direction: row; /* Arrange items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+        justify-content: space-around; /* Adjust as needed */
+        align-items: center; /* Align items vertically */
+    }
+
+    .photo-item {
+        width: 48%; /* Adjust the width as needed */
+        margin: 1%; /* Adjust the margin as needed */
+        box-sizing: border-box;
+    }
+
+    /* Style for demonstration purposes */
+    .photo-item img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+
+    .photo-item p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+
+
+
+
+
 
 @media (prefers-reduced-motion) {
     .animation {
