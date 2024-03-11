@@ -75,7 +75,7 @@ h2.portrait, h3.portrait{
 
 h3.likes {
     font-size: 2em;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 80%;
     text-align: center;
     margin: 10px auto; 
@@ -139,14 +139,14 @@ img.recipes {
 
 h2.recipes {
     font-size: 200%;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 60%;
     text-align: center;
     margin: 10px auto; 
 }
 h3.recipes {
     font-size: 175%;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 60%;
     text-align: center;
     margin: 10px auto; 
@@ -177,7 +177,7 @@ ol.recipe_steps {
 }
 
 .recipes-grid > img {
-    border: 2px solid bisque;
+    border: 2px solid #fcf3e1;
     width: 100%; 
     height: auto; 
     padding: 1em;
@@ -210,7 +210,7 @@ img.travel {
 
 h2.travel {
     font-size: 120%;
-    background-color: bisque;
+    background-color: #fcf3e1;
     width: 60%;
     text-align: center;
     margin: 10px auto; 
@@ -432,11 +432,42 @@ ul.travel {
         grid-column: span 2; 
         grid-row: span 1;
     }
+<<<<<<< Updated upstream
     
 }
+=======
+
+    .photos-container {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        align-items: center;
+    }
+
+    .photo-item {
+        width: 48%; 
+        margin: 1%; 
+        box-sizing: border-box;
+    }
+
+    .photo-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        padding: 5px;
+    }
+
+    .photo-item p {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+>>>>>>> Stashed changes
 
 @media (prefers-reduced-motion) {
     .animation {
       animation-duration: 0s;
     }
+}
 }
