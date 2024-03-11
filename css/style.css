@@ -261,6 +261,7 @@ ul.travel {
 
 @media only screen and (min-width: 768px) {
     /* UPDATING HOMEPAGE LAYOUT */
+
     .home-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
@@ -321,6 +322,46 @@ ul.travel {
     .likes{
         grid-column: 2;
         grid-row: 3;
+    }
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .images {
+        flex: 1; 
+        margin-right: 20px; 
+    }
+    
+    .details {
+        flex: 1; 
+    }
+    
+    .images img{
+        border: 10px solid rgb(237, 225, 208);
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15%;
+    }
+    .details h2,h3{
+        font-size: 160%;
+        background-color: #fcf3e1;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: 10px auto; 
+    }
+
+    h2{
+        font-size: 160%;
+        background-color: #fcf3e1;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin: 10px auto;
     }
 
     img.portrait {
